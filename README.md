@@ -1,2 +1,2 @@
 # Paintus
-A simple paint app written in C#
+A simple Painting App for windows.
