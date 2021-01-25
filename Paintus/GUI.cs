@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Windows.Forms;
 namespace Paintus
 {
-    public partial class Form1 : Form
+    public partial class GUI : Form
     {
         Bitmap bmp;
         Graphics g;
@@ -17,7 +17,7 @@ namespace Paintus
         Color cc=Color.White;
         bool ismd = false;
         Stack stack = new Stack();
-        public Form1()
+        public GUI()
         {
             InitializeComponent();
             textBox1.Text = "1";
@@ -26,12 +26,6 @@ namespace Paintus
             g = Graphics.FromImage(bmp);
             g1 = panel1.CreateGraphics();
             p = new Pen(cc, size);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            //cut
-            
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -51,31 +45,10 @@ namespace Paintus
           
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //undo
-  
-        }
-
         private void button12_Click(object sender, EventArgs e)
         {
             size = int.Parse(textBox1.Text);
             p = new Pen(cc, size);
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //redo
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //copy
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            //paste
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -149,6 +122,16 @@ namespace Paintus
                 ep = e.Location;
                 ismd = false;
             } 
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
