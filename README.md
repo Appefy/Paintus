@@ -1,6 +1,8 @@
 # Paintus
 A simple Painting App for windows.
 
+![1](https://github.com/prskid1000/Paintus/blob/master/Preview/1.png?raw=true)
+
 ## Status
 Repository status([badge](https://img.shields.io/badge/)):
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
